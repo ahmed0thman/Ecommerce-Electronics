@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-Light.ttf') format('truetype');
+  font-weight: 3200;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('../fonts/Tajawal/Tajawal-Black.ttf') format('truetype');
+  font-weight: 800;
+}

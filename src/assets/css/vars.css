@@ -1,0 +1,15 @@
+html{
+  --color-bg-input-lightgray: #F5F5F5;
+  --color-text-gray-light2: #EDEDED;
+  --color-text-gray-light: #909090;
+  --color-text-gray-lighter: #8b8b8b;
+  --color-text-gray-normal: #656565;
+  --color-bg-gray-lighter: #fafafa;
+  --color-bg-gray-light: #f6f6f6;
+  --color-bg-gray-light2: #eaeaea;
+  --color-bg-gray-dark: #353535;
+  --color-bg-gray-darker: #2E2E2E;
+  --color-bg-gray-darker2: #211C24;
+  --color-btn-primary: #000;
+  --color-primary: #000;
+}
