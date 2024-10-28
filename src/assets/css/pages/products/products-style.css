@@ -1,0 +1,185 @@
+.products{
+  padding: 2.5rem 0;
+  display: flex;
+  column-gap: 2rem;
+
+  .products-filters{
+   width: 250px;
+
+    .filter{
+      margin-bottom: 1rem;
+      details{
+        @property --rotation-degree {
+          syntax: "<angle>";
+          inherits: true;
+          initial-value: 0deg;
+        }
+        summary{
+          padding-block: 12px;
+          border-bottom: 1px solid var(--color-text-gray-light2);
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+          .filter-type{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            color: var(--color-primary);
+          }
+          &::after{
+            content: '';
+            background: url('../../../images/icons/chevron-up.svg');
+            transform: rotate(var(--rotation-degree));
+            width: 24px;
+            height: 24px;
+            transition: all 0.33s ease-in-out;
+          }
+          &::-webkit-details-marker {
+            display: none;
+          }
+        }
+
+        .price-filter-handler{
+          margin-top: 1rem;
+          opacity: 0;
+          transition: opacity 0.75s ease-in-out;
+
+          .form-group{
+            .form-label{
+              color: var(--color-text-gray-lighter);
+            }
+          }
+        }
+
+        .options{
+          padding:0 1rem;
+          margin-top: 1rem;
+          max-height: 390px;
+          overflow-y: auto;
+          overflow-x: hidden;
+          direction: ltr;
+          .filter-options{
+            text-align: end;
+            padding: 1rem 0;
+            li{
+              margin-bottom: 0.5rem;
+              .form-group-check{
+                cursor: pointer;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 0.33rem;
+                direction: ltr;
+                input[type="checkbox"]{
+                  display: none;
+                }
+
+                .form-check-label{
+                  cursor: pointer;
+                  font-size: 18px;
+                  line-height: 24px;
+
+                  .result-count{
+                    font-size: 12px;
+                    line-height: 24px;
+                    color: var(--color-text-gray-light);
+                  }
+                }
+
+                &::before{
+                  content: '';
+                  width: 15px;
+                  height: 15px;
+                  border: 1px solid var(--color-primary);
+                  border-radius: 4px;
+                }
+
+                &:has(input[type="checkbox"]:checked){
+                  &::before{
+                    content: '\2713';
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 12px;
+                    background-color: var(--color-primary);
+                  }
+                }
+              }
+            }
+          }
+          &::-webkit-scrollbar {
+            width: 2px;            /* Width of the entire scrollbar */
+          }
+          
+          /* Scrollbar track (empty space) */
+          &::-webkit-scrollbar-track {
+            background: var(--color-text-gray-light2);
+               /* Color of the track */
+          }
+          
+          /* Scrollbar handle (thumb) */
+          &::-webkit-scrollbar-thumb {
+            background-color: var(--color-primary);
+            border-radius: 10px;
+          }
+          
+        }
+
+
+        &[open]{
+          --rotation-degree: 180deg;
+          .price-filter-handler{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .products-container{
+    flex-grow: 1;
+    .products-handler{
+      padding: 0.75rem 0;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .total-results{
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--color-text-gray-normal);
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        span{
+          font-size: 20px;
+          line-height: 16px;
+          color: var(--color-primary);
+        }
+
+        .filter-toggler{
+          margin-inline-start: 2rem;
+          padding: 0.25rem 0.5rem;
+          border: 1px solid var(--color-text-gray-light);
+        }
+      }
+      .form-select{
+        width: 250px;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--color-primary);
+        padding: 0.75rem;
+        background-position: left .75rem center;
+
+        &:focus{
+          box-shadow: none;
+          border-color: var(--color-primary);
+        }
+
+      }
+    }
+  }
+}

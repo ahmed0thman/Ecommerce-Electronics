@@ -1,28 +1,28 @@
 var swiperCategories = new Swiper("#swiperCategories", {
   breakpoints:{
     0: {
-      slidesPerView: 1,
-      spaceBetween: 5,
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
     525: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    776: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    992: {
+    756: {
       slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 5,
       spaceBetween: 15,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 6,
       spaceBetween: 20,
     },
     1400: {
       slidesPerView: 6,
-      spaceBetween: 30,
+      spaceBetween: 15,
     },
   },
   pagination: {

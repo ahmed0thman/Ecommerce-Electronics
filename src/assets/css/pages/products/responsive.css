@@ -1,0 +1,40 @@
+@media (max-width:992px) {
+  .products{
+    position: relative;
+    .products-filters{
+      padding: 2rem 1.5rem;
+      position: fixed;
+      bottom: 0;
+      /* height:  calc(100vh - 200px); */
+      height:  100vh;
+      left: 0;
+      width: 320px;
+      z-index: 10000;
+      background-color: #fff;
+      overflow-y: auto;
+      transform: translate(-320px);
+      transition: transform 0.33s ease-in-out;
+      /* pointer-events: none; */
+      &::-webkit-scrollbar {
+        width: 10px;            /* Width of the entire scrollbar */
+      }
+      
+      /* Scrollbar track (empty space) */
+      &::-webkit-scrollbar-track {
+        background: var(--color-text-gray-light2);
+           /* Color of the track */
+      }
+      
+      /* Scrollbar handle (thumb) */
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        border: 2px solid var(--color-text-gray-light2);
+      }
+
+      &.show{
+        transform: translate(0);
+      }
+    }
+  }
+}
