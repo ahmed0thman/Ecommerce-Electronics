@@ -1,0 +1,36 @@
+@media (max-width:992px) {
+  .product-main-information{
+    .main-information{
+      .capacity-property{
+        .capacity-options{
+          gap: 0.5rem;
+          .capacity-option{
+            label{
+              zoom: 0.75;
+            }
+          }
+        }
+      }
+
+      .primary-details-list{
+        grid-template-columns: repeat(auto-fill, 150px);
+        gap: .5rem;
+        .primary-detail{
+          zoom: 0.8;
+        }
+
+        &.stock-details{
+          gap: 0.2rem;
+          .stock-detail{
+            padding: 0.5rem;
+            zoom: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:992px) and ((min-width:1200px)){
+  
+}

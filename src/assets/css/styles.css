@@ -36,8 +36,13 @@ a{
   color: #fff;
 }
 
+p{
+  padding: 0;
+  margin: 0;
+}
+
 main{
-  margin-top: 6rem;
+  margin-top: 5.5rem;
 
   .sub-nav{
     background-color: var(--color-bg-gray-darker);

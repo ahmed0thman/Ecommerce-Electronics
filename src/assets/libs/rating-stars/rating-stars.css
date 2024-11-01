@@ -1,0 +1,21 @@
+/* Rating Stars */
+.stars-container{
+  display: grid;
+  grid-template-columns: repeat(5,18px);
+  column-gap: 2px;
+  width: fit-content;
+  background: linear-gradient(90deg,
+   var(--color-gold) 0%, transparent 0%);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  .star{
+    -webkit-text-stroke: 1px var(--color-gold);
+    font-size: 22px;
+  }
+
+  &.rating-handler{
+    .star{
+      cursor: pointer;
+    }
+  }
+}
