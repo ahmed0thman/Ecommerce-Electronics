@@ -13,6 +13,7 @@ let totalResultsCountReturned = 200;
 const data = Array.from({length:totalResultsCountReturned}, (_, i) => i+1);
 $('#productsPagination').pagination({
   dataSource: data,
+  pageRange:1,
   callback: function(data, pagination) {
       // template method of yourself
       // var html = template(data);

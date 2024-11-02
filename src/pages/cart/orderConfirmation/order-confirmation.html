@@ -35,7 +35,7 @@
 
           <div class="nav-items-container">
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="../../../../public/index.html">الرئيسية </a>
               </li>
               <li class="nav-item">
@@ -54,8 +54,8 @@
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item active">
+                <a class="nav-link" href="../src/pages/cart/cart.html">
                   <span class="d-lg-none">عربة التسوق</span>
                   <img src="../../../assets/images/icons/cart.svg" alt="" srcset="" />
                 </a>
@@ -171,7 +171,7 @@
     <div class="wrapper">
       <div id="stepper" class="payment-stepper">
         <div class="list-group list-group-horizontal payment-tab-list" id="itemsList" role="tablist">
-          <a id="tabAddress" class="list-group-item " data-bs-toggle="list" href="#address" role="tab">
+          <a id="tabAddress" class="list-group-item active" data-bs-toggle="list" href="#address" role="tab">
             <span class="step-header">
               <img src="../../../assets/images/icons/address.svg" alt="">
               <span class="step-info">
@@ -189,7 +189,7 @@
               </span>
             </span>
           </a>
-          <a id="tabPayment" class="list-group-item active" data-bs-toggle="list" href="#payment" role="tab">
+          <a id="tabPayment" class="list-group-item" data-bs-toggle="list" href="#payment" role="tab">
             <span class="step-header">
               <img src="../../../assets/images/icons/payment.svg" alt="">
               <span class="step-info">
@@ -200,7 +200,7 @@
           </a>
         </div>
         <div class="tab-content payment-tab-content">
-          <div class="tab-pane fade tab-address " id="address" role="tabpanel">
+          <div class="tab-pane fade tab-address active show" id="address" role="tabpanel">
 
             <h3 class="heading-sm">حدد العنوان</h3>
             <div class="options-list address-list">
@@ -229,7 +229,7 @@
             </div>
 
             <div class="tab-nav-btns">
-              <a href="" class="btn btn-outline-primary btn-md">
+              <a href="../cart.html" class="btn btn-outline-primary btn-md">
                 السابق
               </a>
               <button target="tabShipping" class="btn btn-primary btn-md tab-nav-btn">
@@ -267,7 +267,7 @@
               </button>
             </div>
           </div>
-          <div class="tab-pane fade tab-payment active show" id="payment" role="tabpanel">
+          <div class="tab-pane fade tab-payment" id="payment" role="tabpanel">
             <h3 class="heading-sm">الدفع</h3>
             <div class="payment-container">
               <div class="payment-method-container">
