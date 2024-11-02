@@ -1,0 +1,27 @@
+@media (max-width:765px) {
+  .cart{
+    .cart-items{
+      .cart-item{
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .cart-body{
+          .product-info{
+            .order-info{
+              gap: 6px;
+            }
+          }
+        }
+        
+        .item-quantity-handler{
+          margin-inline-start: 6rem;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:992px) and ((min-width:1200px)){
+  
+}

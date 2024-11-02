@@ -1,24 +1,6 @@
-function toggleNavBar(){
-  const navbarContentElement = document.getElementById("navbarContent");
-  
-  if(navbarContentElement){
-    const children = navbarContentElement.children;
-    let totalHeight = 0;
-    Array.from(children).forEach(element => {
-      totalHeight += element.clientHeight;
-    });
-    
-    if(navbarContentElement.classList.contains("expand")){
-      navbarContentElement.classList.remove("expand")
-      navbarContentElement.style.height = "0px"
-    }
-    else{
-      navbarContentElement.classList.add("expand")
-      navbarContentElement.style.height = `${totalHeight}px`
-    }
-  }
-}
 
+
+//#region Swiper for Categories Section
 var swiperCategories = new Swiper("#swiperCategories", {
   breakpoints:{
     0: {
@@ -59,9 +41,76 @@ function swiperCategoriesNext(){
 function swiperCategoriesPrev(){
   swiperCategories.slidePrev();
 }
+//#endregion
 
-var discountProductSwiper = new Swiper("#discountProductSwiper", {
-  // loop: true,
+//#region Handle all swiper in filtered products section
+// const filterdProductsSection = document.getElementById("filterdProducts");
+// let swipersDict ={}
+// if(filterdProductsSection){
+//   const swipers = filterdProductsSection.querySelectorAll(".swiper");
+//   if(swipers.length){
+    
+//     let index = 1;
+//     for (const swiper of swipers) {
+
+//       swiper.setAttribute("id", `swiper_${index}`)
+      
+//       var tempSwiper = new Swiper(`#swiper_${index}`, {
+//         autoplay: {
+//           delay: 3000,
+//           disableOnInteraction: true,
+//         },
+//         breakpoints:{
+//           0: {
+//             slidesPerView: 1,
+//             spaceBetween: 55,
+//           },
+//           410: {
+//             slidesPerView: 2,
+//             spaceBetween: 10,
+//           },
+//           765: {
+//             slidesPerView: 2,
+//             spaceBetween: 40,
+//           },
+//           870: {
+//             slidesPerView: 3,
+//             spaceBetween: 10,
+//           },
+//           1250: {
+//             slidesPerView: 4,
+//             spaceBetween: 10,
+//           },
+//           1600: {
+//             slidesPerView: 5,
+//             spaceBetween: 10,
+//           },
+//           2000: {
+//             slidesPerView: 6,
+//             spaceBetween: 10,
+//           },
+          
+          
+//         },
+//         navigation: {
+//           nextEl: ".swiper-button-prev",
+//           prevEl: ".swiper-button-next",
+//         }
+//       });
+
+//       swipersDict[`swiper_${index}`] = swiper
+//       index = index + 1;
+//     }
+//   }
+// }
+//#endregion
+
+//#region Swiper For Products With discount Section
+var discountProductSwiper = new Swiper(".swiper", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   breakpoints:{
     0: {
       slidesPerView: 1,
@@ -87,12 +136,8 @@ var discountProductSwiper = new Swiper("#discountProductSwiper", {
       slidesPerView: 5,
       spaceBetween: 10,
     },
-    1700: {
-      slidesPerView: 6,
-      spaceBetween: 10,
-    },
     2000: {
-      slidesPerView: 7,
+      slidesPerView: 6,
       spaceBetween: 10,
     },
     
@@ -103,3 +148,4 @@ var discountProductSwiper = new Swiper("#discountProductSwiper", {
     prevEl: ".swiper-button-next",
   }
 });
+//#endregion

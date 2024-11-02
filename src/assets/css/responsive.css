@@ -1,9 +1,4 @@
 
-@media (max-width: 390px) {
-  .p-pad{
-    padding-inline: 1.5rem;
-  }
-}
 
 @media (max-width: 991.8px) {
   .main-nav{
@@ -257,5 +252,11 @@
         font-size: 14px;
       }
     }
+  }
+}
+
+@media (max-width: 390px) {
+  .p-pad{
+    padding-inline: 1.5rem;
   }
 }

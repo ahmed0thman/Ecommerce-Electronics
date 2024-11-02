@@ -1,3 +1,16 @@
+@media (min-width:992px) {
+  .secondary-banners {
+
+    .banner-big {
+      max-width: 50vw;
+    }
+
+    .banners-smaller {
+      max-width: 50vw;
+    }
+  }
+}
+
 @media (min-width:992px) and (max-width:1200px) {
 
   

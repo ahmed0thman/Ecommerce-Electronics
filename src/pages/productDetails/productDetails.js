@@ -29,7 +29,10 @@ var productThumbnailsSwiper = new Swiper("#productThumbnails", {
 
 });
 var productImagesSwiper = new Swiper("#productImages", {
-  // loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
   spaceBetween: 10,
   slidesPerView: 1,
   slidesPerView:1,
@@ -64,7 +67,10 @@ if(btnShowDetailsElement && productDetails){
 
 //#region Related Products Swiper
 var relatedProductSwiper = new Swiper("#relatedProductSwiper", {
-  // loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   breakpoints:{
     0: {
       slidesPerView: 1,
@@ -88,15 +94,7 @@ var relatedProductSwiper = new Swiper("#relatedProductSwiper", {
     },
     1600: {
       slidesPerView: 5,
-      spaceBetween: 10,
-    },
-    1700: {
-      slidesPerView: 6,
-      spaceBetween: 10,
-    },
-    2000: {
-      slidesPerView: 7,
-      spaceBetween: 10,
+      spaceBetween: 30,
     },
     
     

@@ -14,4 +14,10 @@ html{
   --color-btn-primary: #000;
   --color-primary: #000;
   --color-gold: #FFB547;
+  --color-text-success:#3CD139;
+  --color-text-warning: #E3B231;
+  --color-text-danger: #e33131;
+  --color-bg-success: rgba(60,209,57,0.10);
+  --color-bg-warning: rgba(227,178,49,0.10);
+  --color-bg-danger: rgba(227, 49, 49, 0.1);
 }
