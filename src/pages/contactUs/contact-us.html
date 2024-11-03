@@ -38,10 +38,10 @@
               <li class="nav-item ">
                 <a class="nav-link" href="../../../public/index.html">الرئيسية </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">عنا</a>
+              <li class="nav-item ">
+                <a class="nav-link" href="../about/about.html">عنا</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">التواصل</a>
               </li>
             </ul>
@@ -169,54 +169,65 @@
     </div>
 
     <div class="wrapper">
-      <div class="about">
-        <div class="web-stats">
-          <div class="stats-card">
-            <div class="fs-2 fw-normal counter">
-              +<span class="count" value="15"></span>
+      <div class="contact flex-md-row">
+        <form action="" method="post" class="card form-contact">
+          <div class="row gap-4 gap-lg-0">
+            <div class="col-12 col-lg-4">
+              <input type="text" name="name" id="name" placeholder="اسمك" class="form-control" required>
             </div>
-            <h3 class="fs-6 fw-normal">
-              إجمالي المبيعات السنوية على موقعنا
-            </h3>
-          </div>
-          <div class="stats-card">
-            <div class="fs-2 fw-normal counter">
-              +<span class="count" value="700"></span>
+            <div class="col-12 col-lg-4">
+              <input type="email" name="email" id="email" placeholder="بريدك الإلكتروني" class="form-control" required>
             </div>
-            <h3 class="fs-6 fw-normal">
-              العملاء النشطون على موقعنا
-            </h3>
-          </div>
-          <div class="stats-card">
-            <div class="fs-2 fw-normal counter">
-              +<span class="count" value="5000"></span>
+            <div class="col-12 col-lg-4">
+              <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="هاتفك" class="form-control" required>
             </div>
-            <h3 class="fs-6 fw-normal">
-              مبيعات المنتجات الشهرية
-            </h3>
           </div>
-          <div class="stats-card">
-            <div class="fs-2 fw-normal counter">
-              +<span class="count" value="3000">3000</span>
-            </div>
-            <h3 class="fs-6 fw-normal">
-              البائعون النشطون على موقعنا
-            </h3>
+          <div class="row">
+            <textarea class="form-control" name="message" id="message" placeholder="رسالتك" rows="10" required></textarea>
           </div>
-        </div>
 
-        <div class="about-us flex-md-row">
-          <div class="mt-lg-4 text">
-            <h2 class="fw-bolder">
-              من نحن
-            </h2>
-            <p class="mt-4 heading-lg fs-5 fw-normal">
-              موقع التجارة الإلكترونية المتخصص في الإلكترونيات هو منصة حيث يمكن للمستهلكين شراء مجموعة واسعة من الأجهزة الإلكترونية والإكسسوارات بسهولة من منازلهم. تقدم هذه المواقع عادةً منتجات مثل الهواتف الذكية، وأجهزة الكمبيوتر المحمولة، والكاميرات، والأجهزة المنزلية، وأجهزة الألعاب، ومعدات الصوت، وغيرها من الأدوات التقنية. توفر هذه المواقع أوصافًا تفصيلية للمنتجات، ومراجعات العملاء، والمواصفات الفنية، مما يساعد المستخدمين على اتخاذ قرارات مدروسة قبل الشراء.
+          <button type="submit" class="btn btn-primary btn-md align-self-start">
+            إرسال الرساله
+          </button>
+        </form>
+
+        <div class="card align-self-end align-self-md-start contact-info">
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <img src="../../assets/images/icons/call.svg" alt="" srcset="">
+              <span class="heading-xs">اتصل بنا</span>
+            </div>
+            <p>
+              نحن متواجدون على مدار الساعة طوال أيام الأسبوع.
+            </p>
+            <p>
+              الهاتف:
+              <span>
+                +8801611112222
+              </span>
             </p>
           </div>
-          <div class="d-flex flex-column flex-xxl-row gap-3">
-            <img src="../../assets/images/gallery/about/img1.svg" width="380" height="380"   srcset="">
-            <img src="../../assets/images/gallery/about/img2.svg" width="380" height="380" alt="" srcset="">
+          <hr>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <img src="../../assets/images/icons/envelope.svg" alt="" srcset="">
+              <span class="heading-xs">اكتب لنا</span>
+            </div>
+            <p>
+              املأ استمارتنا وسنتواصل معك خلال ٢٤ ساعة.
+            </p>
+            <p>
+              البريد الإلكتروني:
+              <span>
+                customer@exclusive.com
+              </span>
+            </p>
+            <p>
+              البريد الإلكتروني:
+              <span>
+                customer@exclusive.com
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -299,9 +310,6 @@
   <script src="../../assets/libs/bs5/bootstrap.min.js"></script>
   <script src="../../assets/libs/fontawesome/js/all.min.js"></script>
   <script src="../../assets/js/navbar.js"></script>
-  <script src="../../assets/libs/jquery/jquery.min.js"></script>
-  <script src="../../assets/libs/jquery/jquery.numscroll.min.js"></script>
-  <script src="./about.js"></script>
 </body>
 
 </html>
