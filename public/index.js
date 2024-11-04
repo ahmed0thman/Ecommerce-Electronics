@@ -65,10 +65,10 @@
 
 //#region Swiper For Products With discount Section
 var discountProductSwiper = new Swiper(".swiper", {
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: true,
+  // },
   breakpoints:{
     0: {
       slidesPerView: 1,
