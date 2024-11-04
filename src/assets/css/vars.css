@@ -13,6 +13,32 @@ html{
   --color-bg-gray-darker2: #211C24;
   --color-btn-primary: #000;
   --color-primary: #000;
+  --color-primary-darker: #353535;
+  --color-gold: #FFB547;
+  --color-text-success:#3CD139;
+  --color-text-warning: #E3B231;
+  --color-text-danger: #e33131;
+  --color-bg-success: rgba(60,209,57,0.10);
+  --color-bg-warning: rgba(227,178,49,0.10);
+  --color-bg-danger: rgba(227, 49, 49, 0.1);
+}
+
+html[data-theme="green"]{
+  --color-bg-input-lightgray: #F5F5F5;
+  --color-text-gray-light2: #EDEDED;
+  --color-text-gray-light: #909090;
+  --color-text-gray-lighter: #8b8b8b;
+  --color-text-gray-normal: #656565;
+  --color-bg-primary: #2F5B25;
+  --color-bg-gray-lighter: #fafafa;
+  --color-bg-gray-light: #f6f6f6;
+  --color-bg-gray-light2: #eaeaea;
+  --color-bg-gray-dark: #353535;
+  --color-bg-gray-darker: #2E2E2E;
+  --color-bg-gray-darker2: #211C24;
+  --color-btn-primary: #238744;
+  --color-primary: #238744;
+  --color-primary-darker: #2F5B25;
   --color-gold: #FFB547;
   --color-text-success:#3CD139;
   --color-text-warning: #E3B231;

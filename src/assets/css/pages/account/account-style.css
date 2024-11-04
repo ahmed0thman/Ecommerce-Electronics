@@ -1,0 +1,30 @@
+.account{
+  background-image: url('../../../images/gallery/login.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d8d8d8;
+
+  .form-container{
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    height: 100vh;
+    min-width: 350px;
+    width: 50vw;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+}

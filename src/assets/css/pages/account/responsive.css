@@ -1,0 +1,15 @@
+@media (max-width:756px){
+  .account{
+    .form-container{
+      inset-inline-start: unset;
+      width: 90vw;
+      top: 50%;
+      left: 50%;
+      height: fit-content;
+      transform: translate(-50%, -50%);
+      background-color: unset;
+      background: rgba(255, 255, 255, 255);
+      backdrop-filter: blur(8px);
+    }
+  }
+}

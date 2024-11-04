@@ -1,7 +1,7 @@
-window.onload = () =>{
-  const btnsOpenModal = document.querySelectorAll(".btn-open-modal")
-  const btnsCloseModal = document.querySelectorAll(".btn-close-modal")
 
+const btnsOpenModal = document.querySelectorAll(".btn-open-modal")
+  const btnsCloseModal = document.querySelectorAll(".btn-close-modal")
+  console.log(btnsOpenModal)
   if(btnsOpenModal.length){
     for (const btnOpen of btnsOpenModal) {
       btnOpen.addEventListener('click', (e)=>{
@@ -29,4 +29,3 @@ window.onload = () =>{
       })
     }
   }
-}

@@ -187,6 +187,7 @@
             </h3>
           </div>
           <div class="list-group list-group-horizontal profile-pages" id="itemsList" role="tablist">
+            
             <a class="list-group-item active" data-bs-toggle="list" href="#account" role="tab">
               الحساب
             </a>
@@ -199,7 +200,7 @@
             <a class="list-group-item " data-bs-toggle="list" href="#notifications" role="tab">
               التنبيهات
             </a>
-            <a class="list-group-item" data-bs-toggle="list" href="#settings" role="tab">
+            <a class="list-group-item" data-bs-toggle="list" href="#settings" role="tab" key="5">
               الإعدادات
             </a>
             <button class="list-group-item btn-open-modal" target="modalLogOut" data-bs-toggle="list">
@@ -207,6 +208,14 @@
             </button>
           </div>
 
+
+          <span id="btnToggleMenu" class="d-md-none btn-toggle-menu">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+          <button class="btn btn-log-out btn-open-modal d-md-none" target="modalLogOut">
+            <i class="fa-solid fa-door-open fa-lg"></i>
+            تسجيل خروج
+          </button>
         </div>
 
         <div class="tab-content">
@@ -856,6 +865,7 @@
   <script src="../../assets/js/navbar.js"></script>
   <script src="../../assets/libs/modal/modal.js"></script>
   <script src="../../assets/libs/rating-stars/ratingStars.js"></script>
+  <script src="./profile.js"></script>
 </body>
 
 </html>

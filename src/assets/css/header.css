@@ -87,7 +87,7 @@
                 left: 50%;
                 width: 0;
                 height: 6px;
-                background-color: #000;
+                background-color: var(--color-primary);
                 border-radius: 8px;
                 transform: translate(-50%);
                 transition: width 0.3s ease-in-out;

@@ -257,6 +257,7 @@
           line-height: 48px;
           text-align: end;
           width: 100%;
+          color: var(--color-primary);
         }
         .card-description{
           font-size: 14px;
