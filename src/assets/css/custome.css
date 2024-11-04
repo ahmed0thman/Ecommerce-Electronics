@@ -52,6 +52,63 @@ input.form-control{
   }
 }
 
+.form-select{
+
+  &:focus{
+    outline: none;
+    border-color: var(--color-text-gray-light);
+    box-shadow: 0 0 2px var(--color-primary);
+  }
+}
+
+.form-toggle{
+  width: 55px;
+  height: 30px;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  background: var(--color-bg-gray-light2);
+  transition: all 0.5s ease-in-out;
+
+  input[type="checkbox"]{
+    display: none;
+  }
+  label{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      inset-inline-end: 2px;
+      top: 50%;
+      transform: translate(0, -50%);
+      box-shadow: 0 0 12px var(--color-primary);
+      transition: inset-inline-end 0.2s ease-in-out,
+                  transform 0.2s ease-in-out 0.2s;
+      
+    }
+  }
+
+  
+
+  &:has(input[type="checkbox"]:checked){
+    background: var(--color-primary);
+    label{
+      &::before{
+        inset-inline-end: calc(100% - 20px);
+        transform: translate(-8px, -50%);
+        background: var(--color-bg-gray-light2);
+        box-shadow: 0 0 8px 0 var(--color-primary);
+      }
+    }
+  }
+}
+
 .form-search{
   display: flex;
   justify-content: flex-start;
@@ -145,6 +202,54 @@ input.form-control{
 
 .form-control:focus{
   box-shadow: 0 0 1px var(--color-primary);
+}
+
+.form-group-check{
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.33rem;
+  input[type="checkbox"]{
+    display: none;
+  }
+
+  .form-check-label{
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    padding-inline-start: 1.5rem;
+
+    &::before{
+      content: '';
+      position: absolute;
+      inset-inline-start: 0.1rem;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 16px;
+      height: 16px;
+      border: 1px solid var(--color-primary);
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    
+  }
+  &:has(input[type="checkbox"]:checked){
+    .form-check-label{
+      &::before{
+        content: '\2713';
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        background-color: var(--color-primary);
+      }
+    }
+  }
+  
 }
 
 .paginationjs-pages{
@@ -391,7 +496,6 @@ input.form-control{
     opacity: 0.9;
   }
 }
-
 
 
 
