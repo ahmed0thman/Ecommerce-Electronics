@@ -67,18 +67,14 @@ if(btnShowDetailsElement && productDetails){
 
 //#region Related Products Swiper
 var relatedProductSwiper = new Swiper("#relatedProductSwiper", {
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
   breakpoints:{
     0: {
       slidesPerView: 1,
       spaceBetween: 55,
     },
-    410: {
+    370: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 2,
     },
     765: {
       slidesPerView: 2,

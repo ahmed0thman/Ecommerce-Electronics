@@ -58,6 +58,7 @@
   }
 
   .image-gallery{
+    width: 100%;
     max-width: 100%;
     max-height: 60vh;
     .product-images-list{
@@ -260,6 +261,6 @@
 
 @media (max-width: 390px) {
   .p-pad{
-    padding-inline: 1.5rem;
+    padding-inline: 0;
   }
 }

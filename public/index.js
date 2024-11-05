@@ -74,9 +74,9 @@ var discountProductSwiper = new Swiper(".swiper", {
       slidesPerView: 1,
       spaceBetween: 55,
     },
-    410: {
+    380: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 2,
     },
     765: {
       slidesPerView: 2,
